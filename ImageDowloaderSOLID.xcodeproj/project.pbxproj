@@ -13,6 +13,14 @@
 		BC5456832BE567950021421C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC5456812BE567950021421C /* Main.storyboard */; };
 		BC5456852BE5679F0021421C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC5456842BE5679F0021421C /* Assets.xcassets */; };
 		BC5456882BE5679F0021421C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC5456862BE5679F0021421C /* LaunchScreen.storyboard */; };
+		BC5456912BE567D00021421C /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5456902BE567D00021421C /* ImageDownloader.swift */; };
+		BC5456932BE567F20021421C /* URLSessionImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5456922BE567F20021421C /* URLSessionImageDownloader.swift */; };
+		BC5456952BE568180021421C /* ImageCaching.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5456942BE568180021421C /* ImageCaching.swift */; };
+		BC5456982BE568400021421C /* NSCacheImageCaching.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5456972BE568400021421C /* NSCacheImageCaching.swift */; };
+		BC54569A2BE5684F0021421C /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5456992BE5684F0021421C /* ImageLoader.swift */; };
+		BC54569C2BE56A6A0021421C /* ImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC54569B2BE56A6A0021421C /* ImagesViewController.swift */; };
+		BC54569E2BE56AA80021421C /* ImagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC54569D2BE56AA80021421C /* ImagesViewModel.swift */; };
+		BC5456A02BE56AD20021421C /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC54569F2BE56AD20021421C /* ImageModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		BC5456842BE5679F0021421C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC5456872BE5679F0021421C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC5456892BE5679F0021421C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC5456902BE567D00021421C /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		BC5456922BE567F20021421C /* URLSessionImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionImageDownloader.swift; sourceTree = "<group>"; };
+		BC5456942BE568180021421C /* ImageCaching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCaching.swift; sourceTree = "<group>"; };
+		BC5456972BE568400021421C /* NSCacheImageCaching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCacheImageCaching.swift; sourceTree = "<group>"; };
+		BC5456992BE5684F0021421C /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		BC54569B2BE56A6A0021421C /* ImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesViewController.swift; sourceTree = "<group>"; };
+		BC54569D2BE56AA80021421C /* ImagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesViewModel.swift; sourceTree = "<group>"; };
+		BC54569F2BE56AD20021421C /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +75,28 @@
 				BC54567B2BE567950021421C /* AppDelegate.swift */,
 				BC54567D2BE567950021421C /* SceneDelegate.swift */,
 				BC54567F2BE567950021421C /* ViewController.swift */,
+				BC54569B2BE56A6A0021421C /* ImagesViewController.swift */,
+				BC54569D2BE56AA80021421C /* ImagesViewModel.swift */,
+				BC54569F2BE56AD20021421C /* ImageModel.swift */,
+				BC54568F2BE567B40021421C /* Image Downloader */,
 				BC5456812BE567950021421C /* Main.storyboard */,
 				BC5456842BE5679F0021421C /* Assets.xcassets */,
 				BC5456862BE5679F0021421C /* LaunchScreen.storyboard */,
 				BC5456892BE5679F0021421C /* Info.plist */,
 			);
 			path = ImageDowloaderSOLID;
+			sourceTree = "<group>";
+		};
+		BC54568F2BE567B40021421C /* Image Downloader */ = {
+			isa = PBXGroup;
+			children = (
+				BC5456902BE567D00021421C /* ImageDownloader.swift */,
+				BC5456922BE567F20021421C /* URLSessionImageDownloader.swift */,
+				BC5456942BE568180021421C /* ImageCaching.swift */,
+				BC5456972BE568400021421C /* NSCacheImageCaching.swift */,
+				BC5456992BE5684F0021421C /* ImageLoader.swift */,
+			);
+			path = "Image Downloader";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +172,15 @@
 			files = (
 				BC5456802BE567950021421C /* ViewController.swift in Sources */,
 				BC54567C2BE567950021421C /* AppDelegate.swift in Sources */,
+				BC5456932BE567F20021421C /* URLSessionImageDownloader.swift in Sources */,
+				BC5456982BE568400021421C /* NSCacheImageCaching.swift in Sources */,
+				BC54569C2BE56A6A0021421C /* ImagesViewController.swift in Sources */,
+				BC54569E2BE56AA80021421C /* ImagesViewModel.swift in Sources */,
+				BC5456912BE567D00021421C /* ImageDownloader.swift in Sources */,
 				BC54567E2BE567950021421C /* SceneDelegate.swift in Sources */,
+				BC5456A02BE56AD20021421C /* ImageModel.swift in Sources */,
+				BC54569A2BE5684F0021421C /* ImageLoader.swift in Sources */,
+				BC5456952BE568180021421C /* ImageCaching.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
